@@ -7,7 +7,7 @@ const Navbar = () => {
         Solar System
       </div>
       <div style={{ display:'flex', gap:'20px'}}>
-        <Link to="/Home" style={{ textDecoration: 'none', color: '#fff' }}>Home</Link>
+        <Link to="/home" style={{ textDecoration: 'none', color: '#fff' }}>Home</Link>
         <Link to= "/store" style={{ textDecoration: 'none', color: '#fff' }}>Store</Link>
         <Link to="/scientists" style={{ textDecoration: 'none', color: '#fff' }}>Scientist</Link>
       </div>

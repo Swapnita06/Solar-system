@@ -9,7 +9,7 @@ const Footer = () => {
       <p>&copy; {new Date().getFullYear()} Developed by: Swapnita Singh</p>
       <p> All rights reserved.</p>
       <ul className="footer__links">
-        <li><Link to="/Home">Home</Link></li>
+        <li><Link to="/home">Home</Link></li>
         <li><Link to="/store" >Store</Link></li>
         <li><Link to="/scientists">Scientist</Link></li>
       </ul>
