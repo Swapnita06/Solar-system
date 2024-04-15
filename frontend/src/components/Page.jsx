@@ -4,24 +4,27 @@ import Navbar from './Navbar';
 
 const Page = () => {
   const images = [
-    'https://via.placeholder.com/1000x500',
-    'https://via.placeholder.com/1000x500',
-    'https://via.placeholder.com/1000x500',
-    'https://via.placeholder.com/1000x500',
-    'https://via.placeholder.com/1000x500'
+    './images/mercury.png',
+    './images/vee.png',
+    './images/Earth.png',
+    './images/pngwing.com (2).png',
+    './images/jupiter.png',
+    './images/saturn.png',
+    './images/uranus.png',
+    './images/neptune.png'
   ];
 
   const duplicatedImages = [...images, ...images];
 
   return (
     <div>
-      <marquee scrollamount="20" direction="left" loop="0" style={{ width: '100%', height: '200px', position: 'relative' }}>
+      <marquee scrollamount="20" direction="left" loop="0" style={{ width: '100%', height: '300px', position: 'relative' }}>
         {duplicatedImages.map((image, index) => (
           <img
             src={image}
             alt={`img ${index + 1}`}
             key={index}
-            style={{ width: '200px', height: '200px', margin:'50px', padding:'20px' }}
+            style={{ width: '120px', height: '120px', margin:'50px', padding:'20px' }}
           />
         ))}
       </marquee>
