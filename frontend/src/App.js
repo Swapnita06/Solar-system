@@ -6,6 +6,7 @@ import Store from './components/Store';
 import './App.css'
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
+import Page from './components/Page';
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
         <Route path='/store' element={<Store/>}/>
         <Route path='/scientists' element={<Scientist/>}/>
       </Routes>
-      <Carousel/>
+      <Page/>
       </BrowserRouter>
       </>
   )

@@ -1,38 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useEffect } from 'react';
 
 const Page = () => {
   const images = [
-    'https://via.placeholder.com/1000x500/FF5733/FFFFFF',
-    'https://via.placeholder.com/1000x500/C70039/FFFFFF',
-    'https://via.placeholder.com/1000x500/900C3F/FFFFFF',
-    'https://via.placeholder.com/1000x500/581845/FFFFFF',
-    'https://via.placeholder.com/1000x500/900C3F/FFFFFF'
+    'https://via.placeholder.com/1000x500',
+    'https://via.placeholder.com/1000x500',
+    'https://via.placeholder.com/1000x500',
+    'https://via.placeholder.com/1000x500',
+    'https://via.placeholder.com/1000x500'
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
+  const duplicatedImages = [...images, ...images];
 
   return (
-    <div className="carousel">
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt={`image ${index}`}
-          style={{
-            display: index === currentIndex ? 'block' : 'none',
-            width: '200px',
-            height: '200px'
-          }}
-        />
-      ))}
+    <div>
+      <marquee scrollamount="20" direction="left" style={{ width: '100%', height: '200px', position: 'relative' }}>
+        {duplicatedImages.map((image, index) => (
+          <img
+            src={image}
+            alt={`img ${index + 1}`}
+            key={index}
+            style={{ width: '200px', height: '200px' }}
+          />
+        ))}
+      </marquee>
     </div>
   );
 };
