@@ -15,6 +15,7 @@ function Home() {
       <Planets/>
       <Page/>
       <Planets/>
+     
       </div>
   )
 }

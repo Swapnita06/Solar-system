@@ -48,12 +48,12 @@ export default function BookCard() {
   const cardsData = [
     { id: 1, title: 'Book 1', image: '/images/lost_found.jpg', description: 'it was a good book' },
     { id: 2, title: 'Book 2', image: '/images/space.webp', description: 'it was a good book' },
-    { id: 3, title: 'Book 3', image: '/images/lost_found.jpg', description: 'it was a good book' },
-    { id: 4, title: 'Book 4', image: '/images/lost_found.jpg', description: 'it was a good book' },
-    { id: 5, title: 'Book 5', image: '/images/lost_found.jpg', description: 'it was a good book' },
-    { id: 6, title: 'Book 6', image: '/images/lost_found.jpg', description: 'it was a good book' },
-    { id: 7, title: 'Book 7', image: '/images/lost_found.jpg', description: 'it was a good book' },
-    { id: 8, title: 'Book 8', image: '/images/lost_found.jpg', description: 'it was a good book' }
+    { id: 3, title: 'Book 3', image: '/images/book5.jpg', description: 'it was a good book' },
+    { id: 4, title: 'Book 4', image: '/images/book4.jpg', description: 'it was a good book' },
+    { id: 5, title: 'Book 5', image: '/images/book3.jpeg', description: 'it was a good book' },
+    { id: 6, title: 'Book 6', image: '/images/book6.jpg', description: 'it was a good book' },
+    { id: 7, title: 'Book 7', image: '/images/book7.jpg', description: 'it was a good book' },
+    { id: 8, title: 'Book 8', image: '/images/book8.jpg', description: 'it was a good book' }
     
   ];
 
@@ -67,7 +67,7 @@ export default function BookCard() {
    }}>
       <CardMedia
         component="img"
-        height="350"
+        height="380"
         image={card.image}
         alt="Book Cover"
       />
