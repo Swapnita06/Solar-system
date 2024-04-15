@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import Navbar from './Navbar';
 
 const Page = () => {
   const images = [
@@ -14,13 +15,13 @@ const Page = () => {
 
   return (
     <div>
-      <marquee scrollamount="20" direction="left" style={{ width: '100%', height: '200px', position: 'relative' }}>
+      <marquee scrollamount="20" direction="left" loop="0" style={{ width: '100%', height: '200px', position: 'relative' }}>
         {duplicatedImages.map((image, index) => (
           <img
             src={image}
             alt={`img ${index + 1}`}
             key={index}
-            style={{ width: '200px', height: '200px' }}
+            style={{ width: '200px', height: '200px', margin:'50px', padding:'20px' }}
           />
         ))}
       </marquee>

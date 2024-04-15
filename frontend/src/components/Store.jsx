@@ -1,10 +1,15 @@
+import { Stack } from '@mui/material'
 import React from 'react'
+import Navbar from './Navbar'
+import BookCard from './BookCard'
 
 const Store = () => {
   return (
-    <div>
-     <h1>bye</h1>
-    </div>
+    <Stack>
+      <Navbar/>
+     <h1 style={{color:"white", marginTop:'100px',textAlign:'center'}}>Top Astronomical Books For You!</h1>
+      <BookCard/>
+    </Stack>
   )
 }
 

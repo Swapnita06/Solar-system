@@ -1,10 +1,13 @@
+import { Stack } from '@mui/material'
 import React from 'react'
+import Navbar from './Navbar'
 
 const Scientist = () => {
   return (
-    <div>
-      <h1>yesss</h1>
-    </div>
+    <Stack>
+      <Navbar/>
+      <h1 style={{color:"white"}}>yesss</h1>
+    </Stack>
   )
 }
 

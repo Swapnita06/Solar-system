@@ -1,11 +1,21 @@
+import { Stack, colors } from '@mui/material'
 import React from 'react'
-
+import Page from './Page'
+import Planets from './Planets'
+import Navbar from './Navbar'
 
 function Home() {
   return (
-    <>
-    <h1>HI</h1>
-    </>
+    <div>
+      <Navbar/>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Planets/>
+      <Page/>
+      <Planets/>
+      </div>
   )
 }
 

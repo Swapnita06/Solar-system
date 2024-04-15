@@ -7,19 +7,17 @@ import './App.css'
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
 import Page from './components/Page';
-
+import Planets from './components/Planets';
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
-    <Navbar/>
       <Routes>
-        <Route path="/Home" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path='/store' element={<Store/>}/>
         <Route path='/scientists' element={<Scientist/>}/>
       </Routes>
-      <Page/>
       </BrowserRouter>
       </>
   )
