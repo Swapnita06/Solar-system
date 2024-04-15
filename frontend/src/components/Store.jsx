@@ -6,10 +6,11 @@ import BookCard from './BookCard'
 
 const Store = () => {
   return (
-    <Stack>
+    <>
       <Navbar/>
+    
      <BookCard/>
-    </Stack>
+     </>
   )
 }
 

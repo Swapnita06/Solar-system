@@ -62,15 +62,7 @@ export default function BookCard() {
       {cardsData.map((card)=> (
     <Card style={{ maxWidth: 300, border: '5px solid rgb(174, 174, 242)',// Off-white border color
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 0, 0, 0.2)',
-    transition: 'transform 0.3s ease-in-out'
-   }}
-   onMouseOver={(e) => {
-    e.currentTarget.style.transform = 'scale(1.07)'; // Zoom effect on hover
-  }}
-  onMouseOut={(e) => {
-    e.currentTarget.style.transform = 'scale(1)'; // Reset transform on mouse out
-  }}
-    
+   }} 
     >
       <CardMedia
         component="img"
