@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Store from './components/Store';
 import './App.css'
 import Navbar from './components/Navbar';
+import Carousel from './components/Carousel';
 
 
 const App = () => {
@@ -17,8 +18,8 @@ const App = () => {
         <Route path='/store' element={<Store/>}/>
         <Route path='/scientists' element={<Scientist/>}/>
       </Routes>
+      <Carousel/>
       </BrowserRouter>
-     
       </>
   )
 }
