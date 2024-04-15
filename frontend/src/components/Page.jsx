@@ -24,7 +24,9 @@ const Page = () => {
             src={image}
             alt={`img ${index + 1}`}
             key={index}
-            style={{ width: '120px', height: '120px', margin:'50px', padding:'20px' }}
+            style={{ width: '120px', height: '120px', margin:'50px', padding:'20px',
+            filter: 'drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5))'
+           }}
           />
         ))}
       </marquee>

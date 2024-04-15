@@ -31,6 +31,7 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: 'none', color: '#fff' }}>Home</Link>
         <Link to= "/store" style={{ textDecoration: 'none', color: '#fff' }}>Store</Link>
         <Link to="/scientists" style={{ textDecoration: 'none', color: '#fff' }}>Scientist</Link>
+        <Link to="/cart" style={{ textDecoration: 'none', color: '#fff' }}>My Cart</Link>
       </div>
     </nav>
   );
