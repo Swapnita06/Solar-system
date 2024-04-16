@@ -66,6 +66,7 @@ const Plannn = () => {
               <img style={{ width: "300px", height: "270px", margin: "5px" }} src={planet.image} alt={planet.name} />
             </div>
             <div className='mercury'>
+            <h1 style={{ color: 'white', fontFamily: 'Poppins',textAlign:'center' }}>{planet.name}</h1>
               <p style={{ color: "white", padding: "20px", margin: "40px", fontFamily: 'Montserrat' }}>{planet.description}</p>
             </div>
           </div>
