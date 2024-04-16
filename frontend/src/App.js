@@ -9,6 +9,7 @@ import Carousel from './components/Carousel';
 import Page from './components/Page';
 import Planets from './components/Planets';
 import Cart from './components/Cart';
+import BookCard from './components/BookCard';
 
 
 const App = () => {
@@ -20,7 +21,12 @@ const App = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-
+  const [cartItems, setCartItems] = useState([]);
+  
+    // Function to add item to cart
+    const addToCart = (item) => {
+      setCartItems([...cartItems, item]);
+    };
   return (
     <BrowserRouter>
     {isLoading ? ( // Show loading component if isLoading is true
@@ -33,7 +39,12 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path='/store' element={<Store/>}/>
         <Route path='/scientists' element={<Scientist/>}/>
-        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/cart" element={<Cart cartItems={cartItems} />}
+        />
+        <Route
+          path="/book"
+          element={<BookCard cartItems={cartItems} setCartItems={setCartItems} />} // Pass addToCart function to BookCard component
+        />
       </Routes>
       </>
       )}

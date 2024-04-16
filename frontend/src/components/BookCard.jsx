@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -15,6 +15,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import PropTypes from 'prop-types';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -27,9 +28,10 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function BookCard() {
+export default function BookCard({cartItems, setCartItems}) {
   const [expanded, setExpanded] = useState(false);
   const [quantities, setQuantities] = useState({});
+  const navigate = useNavigate();
 
 
   const handleExpandClick = (id) => {
@@ -43,8 +45,12 @@ export default function BookCard() {
     };
 
   const handleAddToCart = (id) => {
-    // Implement your add to cart logic here
-    console.log(`Added ${quantities[id]} item(s) of Book ${id}to cart.`);
+    const quantity = quantities[id] || 1; 
+    const newItem = { id, quantity };
+    const setItemsFunction = typeof setCartItems === 'function' ? setCartItems : () => {};
+    setItemsFunction(prevCartItems => [...prevCartItems, newItem]);
+    if (cartItems?.length > 0){
+    navigate('/cart');}
   };
 
   const cardsData = [
@@ -61,11 +67,11 @@ export default function BookCard() {
 
   return (
     <>
-    <h1 style={{color:"white", marginTop:'100px',textAlign:'center'}}>Top Astronomical Books For You!</h1>
+    <h1 style={{color:"white", marginTop:'100px',textAlign:'center',fontFamily:'Montserrat'}}>Top Astronomical Books For You!</h1>
     <div className='container' style={{ display: 'flex', flexWrap:'wrap',justifyContent:"space-around", gap:'40px'}}>
       {cardsData.map((card)=> (
     <Card key={card.id} style={{ maxWidth: 300, border: '5px solid rgb(174, 174, 242)',// Off-white border color
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 0, 0, 0.2)',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 0, 0, 0.2)', fontFamily:'Montserrat'
    }}>
       <CardMedia
         component="img"
