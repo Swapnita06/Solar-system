@@ -3,6 +3,9 @@ import React from 'react'
 import Page from './Page'
 import Planets from './Planets'
 import Navbar from './Navbar'
+import Plannn from './Plannn'
+import ParticlesComponent from './Particle'
+
 
 function Home() {
   return (
@@ -12,10 +15,9 @@ function Home() {
       <br></br>
       <br></br>
       <br></br>
-      <Planets/>
+      
       <Page/>
-      <Planets/>
-     
+      <Plannn/>
       </div>
   )
 }

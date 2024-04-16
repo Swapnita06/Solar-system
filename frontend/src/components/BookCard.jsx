@@ -67,7 +67,7 @@ export default function BookCard({cartItems, setCartItems}) {
 
   return (
     <>
-    <h1 style={{color:"white", marginTop:'100px',textAlign:'center',fontFamily:'Montserrat'}}>Top Astronomical Books For You!</h1>
+    <h1 style={{color:"white", marginTop:'150px',textAlign:'center',fontFamily:'Montserrat'}}>Top Astronomical Books For You!</h1>
     <div className='container' style={{ display: 'flex', flexWrap:'wrap',justifyContent:"space-around", gap:'40px'}}>
       {cardsData.map((card)=> (
     <Card key={card.id} style={{ maxWidth: 300, border: '5px solid rgb(174, 174, 242)',// Off-white border color

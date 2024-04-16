@@ -1,0 +1,11 @@
+
+.swapnita{
+    -webkit-box-shadow: 3px 3px 10px 3px rgba(119, 237, 203, 0.67);
+-moz-box-shadow: 3px 3px 10px 3px rgba(119, 237, 203, 0.67);
+box-shadow: 3px 3px 10px 3px rgba(119, 237, 203, 0.67);
+transition: transform 0.3s ease;
+}
+.swapnita:hover{
+    transform: scale(1.05);
+}
+

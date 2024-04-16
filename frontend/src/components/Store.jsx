@@ -8,7 +8,6 @@ const Store = () => {
   return (
     <>
       <Navbar/>
-    
      <BookCard/>
      </>
   )
