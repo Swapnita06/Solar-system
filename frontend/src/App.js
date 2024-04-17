@@ -45,6 +45,7 @@ const App = () => {
           path="/book"
           element={<BookCard cartItems={cartItems} setCartItems={setCartItems} />} // Pass addToCart function to BookCard component
         />
+        <Route path="/planet/:name" component={Planets} />
       </Routes>
       </>
       )}

@@ -1,21 +1,40 @@
-import React from 'react'
-import './Footer.css'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import './Footer.css';
 
-const Footer = () => {
+function Footer() {
   return (
-    <Footer className="footer">
-    <div className="footer__content">
-      <p>&copy; {new Date().getFullYear()} Developed by: Swapnita Singh</p>
-      <p> All rights reserved.</p>
-      <ul className="footer__links">
-        <li><Link to="/Home">Home</Link></li>
-        <li><Link to="/store" >Store</Link></li>
-        <li><Link to="/scientists">Scientist</Link></li>
-      </ul>
-    </div>
-  </Footer>
-  )
+    <footer className="footer">
+      <div className="footer-inner">
+        <div className="footer-section">
+          <h1 style={{marginBottom:"0px"}}>COSMIC FUZZ</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Team</li>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>Press</li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li>Help & Support</li>
+            <li>Partner with us</li>
+            <li>Ride with us</li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Refund Policy</li>
+            <li>Offer Terms</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

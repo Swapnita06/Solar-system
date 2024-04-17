@@ -2,7 +2,9 @@ import React from 'react';
 import { useEffect } from 'react';
 import Navbar from './Navbar';
 
+
 const Page = () => {
+  
   const images = [
     './images/mercury.png',
     './images/vee.png',
@@ -15,19 +17,20 @@ const Page = () => {
   ];
 
   const duplicatedImages = [...images, ...images];
-
   return (
     <div>
       <marquee scrollamount="20" direction="left" loop="0" style={{ width: '100%', height: '300px', position: 'relative' }}>
         {duplicatedImages.map((image, index) => (
-          <img
+           <img
             src={image}
             alt={`img ${index + 1}`}
             key={index}
             style={{ width: '120px', height: '120px', margin:'50px', padding:'20px',
             filter: 'drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5))'
            }}
+           
           />
+         
         ))}
       </marquee>
     </div>

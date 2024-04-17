@@ -26,7 +26,7 @@ const Navbar = () => {
      transition: 'background-color 0.3s, backdrop-filter 0.3s' ,flexWrap:'wrap'
      }}>
       <div style={{ fontWeight: 'bold', marginRight: 'auto', fontFamily:'Montserrat', fontSize:'30px',letterSpacing:'2px',textShadow: '2px 2px 4px rgba(3, 5, 0, 5)' }}> 
-        Solar System
+        COSMIC FUZZ
       </div>
       <div style={{ display:'flex', gap:'100px',flexWrap:'wrap'}}>
         <Link to="/" style={{ textDecoration: 'none', color: '#fff', padding: '10px 20px', fontFamily:'Montserrat',fontSize:'18px',

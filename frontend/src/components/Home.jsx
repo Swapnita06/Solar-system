@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import Plannn from './Plannn'
 import ParticlesComponent from './Particle'
 import Parallax from './Parallax'
+import Footer from './Footer'
 
 
 function Home() {
@@ -19,7 +20,7 @@ function Home() {
       <Parallax/>
       <Page/>
       <Planets/>
-      
+      <Footer/>
       </div>
   )
 }
