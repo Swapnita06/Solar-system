@@ -7,6 +7,7 @@ import Plannn from './Plannn'
 import ParticlesComponent from './Particle'
 import Parallax from './Parallax'
 
+
 function Home() {
   return (
     <div>
@@ -18,6 +19,7 @@ function Home() {
       <Parallax/>
       <Page/>
       <Planets/>
+      
       </div>
   )
 }
