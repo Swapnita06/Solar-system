@@ -17,7 +17,7 @@ function Home() {
       <br></br>
       <Parallax/>
       <Page/>
-      <Plannn/>
+      <Planets/>
       </div>
   )
 }

@@ -1,11 +1,90 @@
 
-.swapnita{
+.planet-card{
     -webkit-box-shadow: 3px 3px 10px 3px rgba(119, 237, 203, 0.67);
 -moz-box-shadow: 3px 3px 10px 3px rgba(119, 237, 203, 0.67);
 box-shadow: 3px 3px 10px 3px rgba(119, 237, 203, 0.67);
 transition: transform 0.3s ease;
+border-radius: 80px;
+
 }
-.swapnita:hover{
+.planet-card:hover{
     transform: scale(1.05);
 }
+.planet-description{
+    color: #fcfafa;
+}
+.title{
+    color: #fcf7f7;
+    font-family: "Poppins";
+    
+}
+.planet-name{
+    color: #fcf7f7;
+}
+
+/* For smaller screens */
+@media only screen and (max-width: 768px) {
+    .planets-container {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .planets-grid {
+      display: grid;
+      gap: 20px;
+    }
+  
+    .planet-card {
+      
+    }
+  
+    .planet-image {
+      width: 100%;
+    }
+  
+    .planet-details {
+      padding: 10px;
+    }
+  }
+  
+  /* For larger screens */
+  @media only screen and (min-width: 769px) {
+    .planets-container {
+      padding: 40px;
+    }
+  
+    .title {
+      font-size: 36px;
+    }
+  
+    .planets-grid {
+      display: grid;
+     flex-wrap: wrap;
+      gap: 30px;
+    }
+  
+    .planet-card {
+        width: calc(50% - 15px);
+    }
+  
+    .planet-card:nth-child(odd){
+        margin-right: 100px;
+    }
+
+    .planet-card:nth-child(even) {
+        margin-left: 700px; 
+      }
+
+    .planet-image {
+      width: 50%;
+    }
+  
+    .planet-details {
+      padding: 20px;
+    }
+  }
+  
 

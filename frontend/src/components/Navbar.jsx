@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import './Navbar.css'
 const Navbar = () => {
   const[scrolled,setScrolled] = useState(false);
 
@@ -91,3 +92,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

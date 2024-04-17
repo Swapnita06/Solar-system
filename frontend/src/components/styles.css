@@ -47,10 +47,8 @@ body {
 }
 
 body {
-  /* font-family: Arial Black, sans-serif; */
-  font-family:  Black Orbitron, sans-serif;
+ font-family:  Black Orbitron, sans-serif;
   text-align: center;
-  /* background: url(/src/assets/mainbg.svg); */
   height: 100vh;
   overflow-x: hidden;
 }
