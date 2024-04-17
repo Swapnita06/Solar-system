@@ -1,6 +1,6 @@
 import "./styles.css";
 import Plx from "react-plx";
-import  bg from "../components/bgfinal.png";
+import  bg from "../components/another3.jpg";
 import  cave  from "../components/cave.png";
 
 
@@ -36,7 +36,7 @@ export default function Parallax() {
           zIndex: 1,
         }}
       >
-        <img style={{ width: "100%",height:'100vh' }} src= {cave} alt="foreground" />
+        <img style={{ width: "100%",height:'100vh'}} src= {cave} alt="foreground" />
       </Plx>
       <Plx
         parallaxData={[
@@ -59,13 +59,14 @@ export default function Parallax() {
         ]}
         style={{
           position: "fixed",
-          opacity: 0.5,
+          opacity: 1,
           left: 0,
-          top: 0,
+          top:0,
           width: "100%",
+    
         }}
       >
-        <img className='w-[100%] h-[100vh]'src={bg} alt="background" />
+        <img className='w-[100%] h-[100vh]'src={bg} alt="background"  />
       </Plx>
       <Plx
         parallaxData={[
@@ -88,11 +89,12 @@ export default function Parallax() {
           alignItems: "center",
           width: "100%",
           zIndex: 2,
-          top:'45%',
-          bottom:'50%'
+          top:'25%'
         }}
       >
+        <h1 className="escape" style={{ fontFamily: "Poppins", color:'rgb(222, 225, 54)',fontSize:'60px'}}>Escape into the magic world</h1>
       </Plx>
+      
       </div>
     </div>
   );

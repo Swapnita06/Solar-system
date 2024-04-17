@@ -21,13 +21,13 @@ const Navbar = () => {
      backgroundColor: scrolled ? 'rgba(51, 51, 51, 0.8)' : '#333', // Change color when scrolled
       backdropFilter: scrolled ? 'blur(10px)' : 'none', // Add blur effect when scrolled
       color: '#fff',
-     padding:'30px 40px',display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 1000,
-     transition: 'background-color 0.3s, backdrop-filter 0.3s' 
+     padding:'15px 40px',display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 1000,
+     transition: 'background-color 0.3s, backdrop-filter 0.3s' ,flexWrap:'wrap'
      }}>
-      <div style={{ fontWeight: 'bold', marginRight: 'auto', fontFamily:'Montserrat', fontSize:'39px',letterSpacing:'2px',textShadow: '2px 2px 4px rgba(3, 5, 0, 5)' }}> 
+      <div style={{ fontWeight: 'bold', marginRight: 'auto', fontFamily:'Montserrat', fontSize:'30px',letterSpacing:'2px',textShadow: '2px 2px 4px rgba(3, 5, 0, 5)' }}> 
         Solar System
       </div>
-      <div style={{ display:'flex', gap:'100px'}}>
+      <div style={{ display:'flex', gap:'100px',flexWrap:'wrap'}}>
         <Link to="/" style={{ textDecoration: 'none', color: '#fff', padding: '10px 20px', fontFamily:'Montserrat',fontSize:'18px',
             border: '2px solid transparent',borderRadius: '5px',transition: 'color 0.3s',bordercolor:'0.3s', transform: '0.3s'}}
          

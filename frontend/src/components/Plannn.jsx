@@ -58,7 +58,7 @@ const Plannn = () => {
           key={index}
            style={{ 
             display: 'flex', 
-            backgroundColor:'black', borderRadius: '80px', padding: '5px', margin: '5px', height: '280px', overflow: 'hidden',flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', // Alternating left and right
+            backgroundColor:'black', borderRadius: '100px', padding: '5px', margin: '5px', height: '280px', overflow: 'hidden',flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', // Alternating left and right
              marginLeft: index % 2 === 0 ? '50px' : '600px', // Add left margin for odd indices
               marginRight: index % 2 === 0 ? '600px' : '50px',
               gap:'10px'
